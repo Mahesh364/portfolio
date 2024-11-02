@@ -3,9 +3,6 @@
   --secondary-color: #7a7b7c;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   background-image: url("/assets/images/pexels-viresh-studio-1444442.jpg");
@@ -36,12 +33,12 @@ body {
 
 #hero-section > div,
 #wish-section > div {
-    background-image: url('https://i.imghippo.com/files/CarlD1728556588.jpg'); /* Replace with your image path */
+    background-image: url('C:/Users/Mahesh Shinde/Desktop/Backup/Sem 5/Portfolio Latest/Portfolio/assets/images/BackgroundImage.jpg'); 
     background-size: cover;         /* Ensures the image covers the entire area */
     background-position: center;    /* Centers the image */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
     filter: brightness(1.1) contrast(1.2);
-    opacity: 1;                  /* Optional: adds some transparency */
+    opacity: 1;                  
 }
 
 #hero-section h1 {
@@ -89,32 +86,6 @@ body {
   object-fit: contain;
   border-radius: 50%;
   background: brown;
-}
-
-@media (width < 768px) {
-  #hero-section h1 {
-    font-size: 4rem;
-  }
-
-  .section-title {
-    font-size: 3rem;
-  }
-
-  .profile-container img {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-@media (width < 480px) {
-  #hero-section h1 {
-    font-size: 3rem;
-  }
-
-  #family img {
-    width: 100px !important;
-    height: 100px;
-  }
 }
 
 .animated {
@@ -190,3 +161,52 @@ body {
   line-height: 1.5;                /* Increases line height for readability */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adds depth to the text */
 }
+
+
+@media (width < 768px) {
+  #hero-section h1 {
+    font-size: 4rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .profile-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .animated.center {
+    translate: 0% 0;
+  }
+}
+
+@media (width < 480px) {
+  #hero-section h1 {
+    font-size: 3rem;
+  }
+
+  #family img {
+    width: 100px !important;
+    height: 100px;
+  }
+  .animated.center {
+    translate: -50% 0;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+      opacity:0;
+      transform: translatex(-100px);
+  }
+  to {
+      opacity:1;
+      transform: translatex(0);
+  }
+}
+.in-left {
+  animation: fadeInLeft 1s 0.3s both;
+}
+
