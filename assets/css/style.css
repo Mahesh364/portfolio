@@ -33,7 +33,7 @@ body {
 
 #hero-section > div,
 #wish-section > div {
-    background-image: url('C:/Users/Mahesh Shinde/Desktop/Backup/Sem 5/Portfolio Latest/Portfolio/assets/images/BackgroundImage.jpg'); 
+    background-image: url('https://i.imghippo.com/files/CarlD1728556588.jpg'); 
     background-size: cover;         /* Ensures the image covers the entire area */
     background-position: center;    /* Centers the image */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
